@@ -52,3 +52,8 @@ randomRangeNumbers k n = unsafePerformIO (randomRangeGenerator k (n-1))
 -- k is the miller-rabin test accurancy (numer of witnesses), n is the number os bits
 getPrime :: Int -> Integer -> Integer
 getPrime k n = head $ dropWhile (\x -> not (isPrime x k)) (randomRangeNumbers 10000000000000000 n)
+
+checkEqual :: Integer -> Integer -> Int -> Integer -> (Integer,Integer)
+checkEqual p q k n
+	| p /= q = (p,q)
+	| otherwise = checkEqual p (getPrime k n) k n 

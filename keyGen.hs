@@ -5,8 +5,7 @@ import System.IO.Error
 
 genKey nK = p*q
     where
-        p = getPrime 5 nK 
-        q = getPrime 5 nK 
+        (p,q) = checkEqual (getPrime 5 nK) (getPrime 5 nK) 5 nK
 
 main = do
     args <- getArgs
