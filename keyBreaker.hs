@@ -3,11 +3,17 @@ import System.Environment
 import System.IO
 import System.IO.Error
 
-primesPrimesprimes = 2 : [x | x <- [3,5..], isPrime x 5]
+primes = [2..]
+
+sieve (x:xs) = x : (sieve (filter (notMultiple x) xs))
+
+notMultiple x y
+    | y `mod` x == 0 = False
+    | otherwise = True
 
 breaker n = (p,q)
     where
-        p = head $ dropWhile (\x -> n `mod` x /= 0) primesPrimesprimes
+        p = head $ dropWhile (\x -> n `mod` x /= 0) (sieve primes)
         q = n `div` p 
 
 main = do
