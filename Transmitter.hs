@@ -1,6 +1,7 @@
 import Data.Char
 import Math.NumberTheory.Moduli
 import System.Random
+import RsaFunctions
 
 --asc2int_ :: [Int] -> Int -> [Integer]
 asc2int_ [] _ = []

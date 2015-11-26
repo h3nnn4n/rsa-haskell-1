@@ -15,8 +15,8 @@ modInv a m = let (i, _, g) = gcdExt a m
 
 genKeys nE nK = [(p*q,e), (p*q,d)]
     where
-        p = getPrime 5 nK
-        q = getPrime 5 nK
+        (p,q) = checkEqual (getPrime 5 nF) (getPrime 5 nF) 5 nF
+        nF = (nK `div` 2 ) + 1
         e = getPrime 5 nE
         d = modInv e ((p-1)*(q-1))
 
