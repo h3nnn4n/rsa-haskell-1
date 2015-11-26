@@ -44,10 +44,10 @@ randomListGenerator k n = do g <- newStdGen
 
 randomRangeGenerator :: Int-> Integer -> IO [Integer]
 randomRangeGenerator k n = do g <- newStdGen
-                              return $ take k (randomRs (2 ^ (n-1), (2^n)-1) g)
+                              return $ take k (randomRs (2 ^ (n-1), (2^(n))-1) g)
 
 randomRangeNumbers :: Int-> Integer -> [Integer]
-randomRangeNumbers k n = unsafePerformIO (randomRangeGenerator k (n-1))
+randomRangeNumbers k n = unsafePerformIO (randomRangeGenerator k (n))
 
 -- k is the miller-rabin test accurancy (numer of witnesses), n is the number os bits
 getPrime :: Int -> Integer -> Integer

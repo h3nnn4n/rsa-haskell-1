@@ -20,13 +20,6 @@ genKeys nE nK = [(p*q,e), (p*q,d)]
         e = getPrime 5 nE
         d = modInv e ((p-1)*(q-1))
 
-genPublic p q e | e < (p-1) * (q-1) = (p*q,e)
-                | otherwise = (0,0)
-
-genPrivate p q e | e < (p-1) * (q-1) && d > 0 = (p*q,d)
-                 | otherwise = (0,0)
-    where d = modInv e ((p-1)*(q-1))
-
 crypt :: [Integer] -> (Integer,Integer) -> [Integer]
 crypt xs (n,e) = map (\x -> powerMod x e n) xs
 
