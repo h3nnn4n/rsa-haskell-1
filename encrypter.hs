@@ -1,4 +1,5 @@
 import Transmitter
+import RsaFunctions
 import Data.List
 import Data.List.Split
 import Data.Char
@@ -12,7 +13,7 @@ main = do
     toBeCrypted <- readFile (args !! 1) 
     let pKey = splitOn ";" ne
         int_blocks = map asc2int (chop4 toBeCrypted)
-        crypted = crypt int_blocks ((read (key !! 0) :: Integer), (read (key !! 1) :: Integer))
+        crypted = crypt (map toInteger int_blocks) ((read (pKey !! 0) :: Integer), (read (pKey !! 1) :: Integer))
         string_blocks = map show crypted
         output = joinBlocks string_blocks
     writeFile (args !! 2) output

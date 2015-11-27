@@ -1,3 +1,5 @@
+module Transmitter where
+
 import Data.Char
 import Math.NumberTheory.Moduli
 import System.Random
@@ -15,7 +17,7 @@ asc2int xs = sum $ asc2int_ ys 0
 
 --int2asc :: Integer -> [Int]
 int2asc 0 = []
-int2asc x = x `mod` 255 : int2asc (x `div` 255)
+int2asc x = chr (fromInteger (x `mod` 255)) : int2asc (x `div` 255)
 
 make4 xs = take 4 (xs ++ repeat ' ')
 
@@ -27,3 +29,5 @@ joinBlocks (xs:xss) = xs ++ detToken ++ joinBlocks (xss)
     where
         detToken = if length xss /= 0 then ";" else ""
 
+concatStrings [] = []
+concatStrings (xs:xss) = xs ++ concatStrings (xss)
