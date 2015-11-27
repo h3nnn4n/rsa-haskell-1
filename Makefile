@@ -4,6 +4,7 @@ HSFLAGS=-w
 all:
 	ghc keyBreaker	$(HSFLAGS) 
 	ghc keyGen	$(HSFLAGS) 
+	ghc encrypter	$(HSFLAGS) 
 
 
 breaker:
@@ -12,6 +13,10 @@ breaker:
 
 generator:
 	ghc keyGen	$(HSFLAGS) 
+
+
+encrypter:
+	ghc encrypter	$(HSFLAGS) 
 
 clean:
 	-rm -v *.{o,hi}
