@@ -1,13 +1,7 @@
 #HSFLAGS=-prof -fforce-recomp -auto-all -caf-all --make -O2
 HSFLAGS=-w
-
-all:
-	ghc keyBreaker	$(HSFLAGS) 
-	ghc keyGen	$(HSFLAGS) 
-	ghc encrypter	$(HSFLAGS) 
-	ghc decrypter	$(HSFLAGS) 
-	ghc properKeyGenerator $(HSFLAGS) 
-
+.PHONY:clean
+all: breaker generator encrypter decrypter proper
 
 breaker:
 	ghc keyBreaker	$(HSFLAGS) 
@@ -30,4 +24,4 @@ proper:
 
 
 clean:
-	-rm -v *.{o,hi}
+	-@rm -v *.o *.hi 2> /dev/null || true

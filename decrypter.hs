@@ -13,7 +13,7 @@ main = do
     toBeDecrypted <- readFile (args !! 1)
     let privKey = splitOn ";" nd
         string_blocks = splitOn ";" toBeDecrypted
-        int_blocks = map (\x -> read x :: Integer) (init string_blocks)
+        int_blocks = map (\x -> read x :: Integer) string_blocks
         decrypted = decrypt int_blocks ((read (privKey !! 0) :: Integer), (read (privKey !! 1) :: Integer))
         asc_blocks = map int2asc decrypted
         output = concatStrings asc_blocks 
