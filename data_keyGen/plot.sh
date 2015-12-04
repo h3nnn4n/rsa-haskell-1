@@ -43,8 +43,8 @@ set tics nomirror
 
 #set sample 10
 
-set xrange[512:8192]
-set yrange[0:360]
+set xrange[128:8192]
+set yrange[0:200]
 
 #f(x) = mean_y
 #fit f(x) 'time500.dat' u 1:3 via mean_y
@@ -54,7 +54,8 @@ set yrange[0:360]
 #plot    'time500.dat'    using 1:3 title 'Total'      with lp ls 1, \
         #mean_y w l ls 4, mean_y+stddev_y w l ls 3, mean_y-stddev_y w l ls 3
 
-g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c
+#g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c
+g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c 
 fit g(x) "<./magia.py"    using 1:2 via a, b, c, d, e
 
 plot "<./magia.py"        using 1:2 notitle     with lp    ls 1, \
