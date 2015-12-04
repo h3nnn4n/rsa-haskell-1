@@ -1,0 +1,534 @@
+
+
+*******************************************************************************
+Fri Dec  4 09:20:24 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(d*b**x)+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 8.8474926700e+02   0.00e+00  1.08e+04    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+ 155 6.0431058535e+01  -9.92e-01  1.08e+02    2.646764e-01   1.001179e+00  -2.072959e-01   5.418407e-01
+
+After 155 iterations the fit converged.
+final sum of squares of residuals : 60.4311
+rel. change during last iteration : -9.9222e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.4691
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.15825
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.264676         +/- 1.665e+11    (6.29e+13%)
+b               = 1.00118          +/- 3.879e-06    (0.0003875%)
+c               = -0.207296        +/- 0.422        (203.6%)
+d               = 0.541841         +/- 3.408e+11    (6.29e+13%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b               0.232  1.000 
+c               0.076  0.596  1.000 
+d              -1.000 -0.232 -0.076  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:22:49 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 1.9462760076e+15   0.00e+00  4.50e+06    1.000000e+00   1.000000e+00   1.000000e+00
+  10 7.8449837097e+01  -1.74e-06  4.50e-04    1.692878e-06  -3.632274e-03   1.612172e+00
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 78.4498
+rel. change during last iteration : -1.73661e-11
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.64474
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.70517
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.69288e-06      +/- 2.331e-07    (13.77%)
+b               = -0.00363227      +/- 0.001015     (27.94%)
+c               = 1.61217          +/- 0.9298       (57.67%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.970  1.000 
+c               0.768 -0.881  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:23:26 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036393862e+22   0.00e+00  1.37e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  13 6.0932781596e+01  -3.21e-01  1.37e-03   -1.941657e-06   2.603559e-03  -7.499061e-01   5.736323e-10
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 60.9328
+rel. change during last iteration : -3.21406e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47518
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.17617
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -1.94166e-06     +/- 1.298e-06    (66.85%)
+b               = 0.00260356       +/- 0.002379     (91.37%)
+c               = -0.749906        +/- 1.178        (157.1%)
+d               = 5.73632e-10      +/- 2.022e-10    (35.25%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.972  1.000 
+c               0.785 -0.891  1.000 
+d              -0.987  0.924 -0.707  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:23:56 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [0.00000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036393862e+22   0.00e+00  1.37e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  13 6.0932781596e+01  -3.21e-01  1.37e-03   -1.941657e-06   2.603559e-03  -7.499061e-01   5.736323e-10
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 60.9328
+rel. change during last iteration : -3.21406e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47518
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.17617
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -1.94166e-06     +/- 1.298e-06    (66.85%)
+b               = 0.00260356       +/- 0.002379     (91.37%)
+c               = -0.749906        +/- 1.178        (157.1%)
+d               = 5.73632e-10      +/- 2.022e-10    (35.25%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.972  1.000 
+c               0.785 -0.891  1.000 
+d              -0.987  0.924 -0.707  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:06 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [128.000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036393862e+22   0.00e+00  1.37e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  13 6.0932781596e+01  -3.21e-01  1.37e-03   -1.941657e-06   2.603559e-03  -7.499061e-01   5.736323e-10
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 60.9328
+rel. change during last iteration : -3.21406e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47518
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.17617
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -1.94166e-06     +/- 1.298e-06    (66.85%)
+b               = 0.00260356       +/- 0.002379     (91.37%)
+c               = -0.749906        +/- 1.178        (157.1%)
+d               = 5.73632e-10      +/- 2.022e-10    (35.25%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.972  1.000 
+c               0.785 -0.891  1.000 
+d              -0.987  0.924 -0.707  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:13 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [256.000 : 4096.00]
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036393858e+22   0.00e+00  1.39e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  14 6.0599897252e+01  -5.25e-08  1.39e-04   -2.230131e-06   3.226743e-03  -1.122044e+00   6.131710e-10
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 60.5999
+rel. change during last iteration : -5.25169e-13
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.49815
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.24444
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -2.23013e-06     +/- 1.516e-06    (67.98%)
+b               = 0.00322674       +/- 0.002908     (90.12%)
+c               = -1.12204         +/- 1.538        (137.1%)
+d               = 6.13171e-10      +/- 2.296e-10    (37.44%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.977  1.000 
+c               0.841 -0.926  1.000 
+d              -0.988  0.935 -0.773  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:18 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [512.000 : 4096.00]
+        #datapoints = 29
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036390351e+22   0.00e+00  1.44e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  14 5.9971566852e+01  -4.73e-06  1.44e-04   -2.937190e-06   4.837721e-03  -2.179429e+00   7.068510e-10
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 59.9716
+rel. change during last iteration : -4.72863e-11
+
+degrees of freedom    (FIT_NDF)                        : 25
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.54883
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.39886
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -2.93719e-06     +/- 2.093e-06    (71.25%)
+b               = 0.00483772       +/- 0.004365     (90.23%)
+c               = -2.17943         +/- 2.621        (120.3%)
+d               = 7.06851e-10      +/- 3e-10        (42.45%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.984  1.000 
+c               0.908 -0.963  1.000 
+d              -0.991  0.953 -0.856  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:25 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [768.000 : 4096.00]
+        #datapoints = 27
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036303332e+22   0.00e+00  1.49e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  14 5.9401469949e+01  -2.78e-04  1.49e-04   -3.865235e-06   7.090694e-03  -3.817391e+00   8.246689e-10
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 59.4015
+rel. change during last iteration : -2.7779e-09
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.60707
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.58267
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -3.86523e-06     +/- 2.941e-06    (76.1%)
+b               = 0.00709069       +/- 0.006617     (93.32%)
+c               = -3.81739         +/- 4.446        (116.5%)
+d               = 8.24669e-10      +/- 4.003e-10    (48.54%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.989  1.000 
+c               0.944 -0.980  1.000 
+d              -0.993  0.965 -0.904  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:32 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [1024.00 : 4096.00]
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4035579018e+22   0.00e+00  1.55e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  14 5.9006582289e+01  -9.86e-03  1.55e-04   -4.939594e-06   9.851010e-03  -6.000084e+00   9.556809e-10
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 59.0066
+rel. change during last iteration : -9.86307e-08
+
+degrees of freedom    (FIT_NDF)                        : 21
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.67626
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.80984
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -4.93959e-06     +/- 4.228e-06    (85.59%)
+b               = 0.00985101       +/- 0.01019      (103.4%)
+c               = -6.00008         +/- 7.541        (125.7%)
+d               = 9.55681e-10      +/- 5.475e-10    (57.29%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.992  1.000 
+c               0.963 -0.988  1.000 
+d              -0.995  0.974 -0.934  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:24:40 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [128.000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.4036393862e+22   0.00e+00  1.37e+10    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  13 6.0932781596e+01  -3.21e-01  1.37e-03   -1.941657e-06   2.603559e-03  -7.499061e-01   5.736323e-10
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 60.9328
+rel. change during last iteration : -3.21406e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47518
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.17617
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -1.94166e-06     +/- 1.298e-06    (66.85%)
+b               = 0.00260356       +/- 0.002379     (91.37%)
+c               = -0.749906        +/- 1.178        (157.1%)
+d               = 5.73632e-10      +/- 2.022e-10    (35.25%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.972  1.000 
+c               0.785 -0.891  1.000 
+d              -0.987  0.924 -0.707  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:25:08 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [128.000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e            
+   0 3.2313853583e+29   0.00e+00  4.49e+13    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  17 5.9070488562e+01  -1.53e-04  4.49e-04    2.292857e-06  -1.517307e-03   2.403144e-01  -9.694216e-10   1.826532e-13
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 59.0705
+rel. change during last iteration : -1.52507e-09
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47912
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.1878
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.29286e-06      +/- 4.771e-06    (208.1%)
+b               = -0.00151731      +/- 0.005064     (333.7%)
+c               = 0.240314         +/- 1.596        (664.2%)
+d               = -9.69422e-10     +/- 1.685e-09    (173.8%)
+e               = 1.82653e-13      +/- 1.98e-13     (108.4%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      
+a               1.000 
+b              -0.974  1.000 
+c               0.805 -0.904  1.000 
+d              -0.987  0.928 -0.730  1.000 
+e               0.962 -0.882  0.672 -0.993  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:25:25 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [128.000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e            
+   0 3.2313853583e+29   0.00e+00  4.49e+13    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  17 5.9070488562e+01  -1.53e-04  4.49e-04    2.292857e-06  -1.517307e-03   2.403144e-01  -9.694216e-10   1.826532e-13
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 59.0705
+rel. change during last iteration : -1.52507e-09
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47912
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.1878
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.29286e-06      +/- 4.771e-06    (208.1%)
+b               = -0.00151731      +/- 0.005064     (333.7%)
+c               = 0.240314         +/- 1.596        (664.2%)
+d               = -9.69422e-10     +/- 1.685e-09    (173.8%)
+e               = 1.82653e-13      +/- 1.98e-13     (108.4%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      
+a               1.000 
+b              -0.974  1.000 
+c               0.805 -0.904  1.000 
+d              -0.987  0.928 -0.730  1.000 
+e               0.962 -0.882  0.672 -0.993  1.000 
+
+
+*******************************************************************************
+Fri Dec  4 09:25:38 2015
+
+
+FIT:    data read from "<./magia.py"    using 1:2
+        format = x:z
+        x range restricted to [128.000 : 4096.00]
+        #datapoints = 32
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = e*x**4 + d*x**3 + a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e            
+   0 3.2313853583e+29   0.00e+00  4.49e+13    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+  17 5.9070488562e+01  -1.53e-04  4.49e-04    2.292857e-06  -1.517307e-03   2.403144e-01  -9.694216e-10   1.826532e-13
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 59.0705
+rel. change during last iteration : -1.52507e-09
+
+degrees of freedom    (FIT_NDF)                        : 27
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.47912
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.1878
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.29286e-06      +/- 4.771e-06    (208.1%)
+b               = -0.00151731      +/- 0.005064     (333.7%)
+c               = 0.240314         +/- 1.596        (664.2%)
+d               = -9.69422e-10     +/- 1.685e-09    (173.8%)
+e               = 1.82653e-13      +/- 1.98e-13     (108.4%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      
+a               1.000 
+b              -0.974  1.000 
+c               0.805 -0.904  1.000 
+d              -0.987  0.928 -0.730  1.000 
+e               0.962 -0.882  0.672 -0.993  1.000 
