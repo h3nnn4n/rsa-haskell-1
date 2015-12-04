@@ -15,9 +15,9 @@ modInv a m = let (i, _, g) = gcdExt a m
 
 genKeys nE nK = [(p*q,e), (p*q,d)]
     where
-        (p,q) = checkEqual (getPrime 16 nF) (getPrime 16 nF) 16 nF
+        (p,q) = checkEqual (getPrime 32 nF) (getPrime 32 nF) 32 nF
         nF = (nK `div` 2 ) + 1
-        e = getPrime 16 nE
+        e = getPrime 32 nE
         d = modInv e ((p-1)*(q-1))
 
 crypt :: [Integer] -> (Integer,Integer) -> [Integer]
