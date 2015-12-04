@@ -7,7 +7,7 @@ set xlabel "Número de bits"
 set autoscale
 
 set ylabel "Tempo"
-set title "Quebra de chave RSA"
+set title "Geração de chave RSA"
 
 set grid
 set style data points
@@ -43,8 +43,8 @@ set tics nomirror
 
 #set sample 10
 
-set xrange[128:4096]
-set yrange[0:20]
+set xrange[512:8192]
+set yrange[0:360]
 
 #f(x) = mean_y
 #fit f(x) 'time500.dat' u 1:3 via mean_y

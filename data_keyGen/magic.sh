@@ -1,20 +1,47 @@
 #!/bin/bash
 
-SAMPLES=10
-BEGIN=128
-END=4096
+##################################
+#  First run with small numbers  #
+##################################
+
+RERUNS=200
+SAMPLES=4
+BEGIN=4096
+END=8192
 STEP=128
 
-make
-
-for i in `seq $BEGIN $STEP $END`
+for k in `seq 1 $RERUNS`
 do
-    echo -n $i bits
-    for j in `seq 1 $SAMPLES`
+    for i in `seq $BEGIN $STEP $END`
     do
-        echo -n .
-        /usr/bin/time -f '%U' ./keyGen $i > /dev/null 2>> time_$i
-        #./keyGen $i | /usr/bin/time -f '%U' ./keyBreaker  > /dev/null $| tee time_$i
+        echo -n $i bits
+        for j in `seq 1 $SAMPLES`
+        do
+            echo -n .
+            /usr/bin/time -f '%U' ./keyGen $i > /dev/null 2>> time_$i
+            #./keyGen $i | /usr/bin/time -f '%U' ./keyBreaker  > /dev/null $| tee time_$i
+        done
+        echo ""
     done
-    echo ""
 done
+
+###################################
+##   Rerun with bigger numbers    #
+###################################
+#
+#SAMPLES=10
+#BEGIN=4096
+#END=8192
+#STEP=512
+#
+#for i in `seq $BEGIN $STEP $END`
+#do
+#    echo -n $i bits
+#    for j in `seq 1 $SAMPLES`
+#    do
+#        echo -n .
+#        /usr/bin/time -f '%U' ./keyGen $i > /dev/null 2>> time_$i
+#        #./keyGen $i | /usr/bin/time -f '%U' ./keyBreaker  > /dev/null $| tee time_$i
+#    done
+#    echo ""
+#done
