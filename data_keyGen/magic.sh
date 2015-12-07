@@ -5,7 +5,7 @@
 ##################################
 
 RERUNS=200
-SAMPLES=4
+SAMPLES=6
 BEGIN=4096
 END=8192
 STEP=128

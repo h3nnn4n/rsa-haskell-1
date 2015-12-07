@@ -44,7 +44,7 @@ set tics nomirror
 #set sample 10
 
 set xrange[128:8192]
-set yrange[0:200]
+set yrange[0:300]
 
 #f(x) = mean_y
 #fit f(x) 'time500.dat' u 1:3 via mean_y
